@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tamagotchi Cat Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NekoTchi</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🐾 Tamagotchi Cat</h1>
+  <h1>🐾 NekoTchi – Tamagotchi Kucing</h1>
+
   <canvas id="gameCanvas" width="200" height="200"></canvas>
-  <div class="controls">
-    <button onclick="changeMood('happy')">Senang</button>
-    <button onclick="changeMood('hungry')">Lapar</button>
-    <button onclick="changeMood('sleepy')">Ngantuk</button>
-    <button onclick="changeMood('dirty')">Kotor</button>
-    <button onclick="changeMood('sick')">Sakit</button>
-    <button onclick="changeMood('dead')">💀</button>
+
+  <div id="stats">
+    <p>🍖 Hunger: <span id="hunger">100</span></p>
+    <p>💤 Energy: <span id="energy">100</span></p>
+    <p>🧼 Cleanliness: <span id="cleanliness">100</span></p>
+    <p>😊 Happiness: <span id="happiness">100</span></p>
+    <p>🏆 Score: <span id="score">0</span></p>
   </div>
+
+  <div class="controls">
+    <button onclick="feed()">🍖 Feed</button>
+    <button onclick="sleep()">💤 Sleep</button>
+    <button onclick="clean()">🧼 Clean</button>
+    <button onclick="play()">😊 Play</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
