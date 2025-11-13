@@ -1,27 +1,49 @@
 body {
-  background-color: #E6F4D9;
-  color: #34521E;
-  font-family: 'Courier New', monospace;
+  font-family: "Press Start 2P", monospace;
+  background-color: #f9f6f2;
+  color: #333;
   text-align: center;
-  padding-top: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff88a1;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 canvas {
-  border: 3px solid #34521E;
-  background-color: #BFD8A8;
-  image-rendering: pixelated;
+  background-color: #e8f8f5;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .controls button {
-  margin: 5px;
-  padding: 8px 12px;
-  background: #88A85A;
+  font-size: 12px;
+  padding: 6px 12px;
+  margin: 4px;
   border: none;
-  color: white;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: #ffd6e0;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .controls button:hover {
-  background: #34521E;
+  background-color: #ffb3c1;
+}
+
+#stats {
+  background: #fff;
+  border: 2px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 12px;
 }
