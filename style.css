@@ -1,0 +1,27 @@
+body {
+  background-color: #E6F4D9;
+  color: #34521E;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding-top: 20px;
+}
+
+canvas {
+  border: 3px solid #34521E;
+  background-color: #BFD8A8;
+  image-rendering: pixelated;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #88A85A;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #34521E;
+}
